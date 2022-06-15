@@ -18,9 +18,5 @@ public class Cosa implements Serializable {
     private Long id;
     private String cosaName;
     private String description;
-    @ManyToOne
-    @JoinTable(name = "utente_cose", joinColumns = @JoinColumn(name = "cose_id"), inverseJoinColumns = @JoinColumn(name = "utente_id"))
-    @ToString.Exclude
-    @JsonIgnore
-    private Utente utente;
+
 }
